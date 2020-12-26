@@ -1,0 +1,5 @@
+<div class="container">
+    <button @click="sendPhoneMsg" type="text">
+        发送通知
+    </button>
+</div>

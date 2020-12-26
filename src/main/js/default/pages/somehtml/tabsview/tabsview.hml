@@ -1,0 +1,40 @@
+<div class="container">
+    <text style="font-size: 18px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/tabsview/tabsview</span>
+    </text>
+  <tabs index="0" vertical="false">
+    <tab-bar mode="fixed">
+      <text>
+        <span>1.一个tab</span>
+      </text>
+      <text>
+        <span>2.一个tab</span>
+      </text>
+      <text>
+        <span>3.一个tab</span>
+      </text><text>
+        <span>4.一个tab</span>
+      </text>
+      <text>
+        <span>5.一个tab</span>
+      </text>
+
+    </tab-bar>
+    <tab-content scrollable="true">
+      <text>
+        <span>1.一个tab</span>
+      </text>
+      <text>
+        <span>2.一个tab</span>
+      </text>
+      <text>
+        <span>3.一个tab</span>
+      </text><text>
+        <span>4.一个tab</span>
+      </text>
+      <text>
+        <span>5.一个tab</span>
+      </text>
+    </tab-content>
+  </tabs>
+</div>

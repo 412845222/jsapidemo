@@ -1,0 +1,126 @@
+<div class="container">
+  <div id="home1" class="row">
+    <div for="(index,item) in jsApi[0]" class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>{{ item.name }}</text>
+          </div>
+          <div class="card-body">
+            <button @click="showDialog(0,index)" value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <divider style="color: #fff;margin: 5px;"></divider>
+  <div id="home2" class="row">
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>组件方法</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>动画样式</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>渐变样式</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>转场样式</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>媒体查询</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>字体样式</text>
+          </div>
+          <div class="card-body">
+            <button value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <divider style="color: #fff;margin: 5px;"></divider>
+  <div id="home3" class="row">
+    <div for="(index,item) in jsApi[1]" class="col-3">
+      <div class="dweb">
+        <div class="card">
+          <div class="card-header">
+            <text>{{ item.name }}</text>
+          </div>
+          <div class="card-body">
+            <button @click="showDialog(1,index)" value="查看更多">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <dialog id="dialog" oncancel="cancelDialog">
+    <list>
+      <list-item @click="toOtherPage(item.url)" for="item in choosedList">
+        <text>
+          <span>{{ item.name }}</span>
+        </text>
+      </list-item>
+    </list>
+  </dialog>
+</div>

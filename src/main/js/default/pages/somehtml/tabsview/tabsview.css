@@ -1,0 +1,12 @@
+@import '../../../common/style.css';
+
+text {
+  color: #000;
+}
+
+tab-content text {
+  width: 100%;
+  height: 150px;
+  background-color: #fff;
+  text-align: center;
+}

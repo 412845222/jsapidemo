@@ -1,0 +1,13 @@
+<div class="container">
+    <text style="font-size: 18px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/stackview/stackview</span>
+    </text>
+    <stack id="onestack">
+        <text style="padding: 5px 10px;background-color: #000;width: 120px;height: 60px;text-align: center;font-size: 18px;border-radius: 30px;margin: 5px;">
+            <span>没懂啥意思</span>
+        </text>
+    </stack>
+    <button @click="textlist++">
+        add some
+    </button>
+</div>

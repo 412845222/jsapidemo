@@ -1,0 +1,11 @@
+<div class="container">
+    <button @click="showdialog()" style="text-color: #fff;width: 150px;height: 60px;font-size: 20px;text-align: center;">
+        点击弹起
+    </button>
+    
+    <dialog id="dialog" style="height: 300px;">
+        <text style="width: 100%;color: #000;">
+            <span>出来啦</span>
+        </text>
+    </dialog>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <text style="font-size: 18px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/popupview/popupview</span>
+    </text>
+    <div id="clicktips" style="width: 200px;border: 1px solid #000;position: absolute;top: 200px;">
+        <text style="width: 100%;padding: 10px;text-align: center;">
+            <span>点击提示</span>
+        </text>
+    </div>
+    
+    <popup target="clicktips" placement="top">
+        <text style="width: 120px;padding: 5px 10px;text-align: center;">
+            <span>我是提示</span>
+        </text>
+    </popup>
+</div>

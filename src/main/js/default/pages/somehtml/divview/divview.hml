@@ -1,0 +1,14 @@
+<div class="container">
+  <text style="font-size: 16px;margin-bottom: 20px;">
+    <span>路径：pages/somehtml/divview/divview</span>
+  </text>
+
+  <div id="onediv" style="" class="" ref="" disabled="false" focusable="true" data="">
+    <text>
+      <span>一个div</span>
+
+    </text>
+
+  </div>
+
+</div>

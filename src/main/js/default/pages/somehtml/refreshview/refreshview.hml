@@ -1,0 +1,11 @@
+<div class="container">
+    <text style="font-size: 18px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/refreshview/refreshview</span>
+    </text>
+    <refresh offset="0" refreshing="true">
+        <text class="title">
+            下拉刷新
+        </text>
+    </refresh>
+
+</div>

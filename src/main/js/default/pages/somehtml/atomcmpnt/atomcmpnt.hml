@@ -1,0 +1,324 @@
+<div class="container">
+  <list scrollbar="auto">
+    <list-item>
+      <text style="font-size: 16px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/atomcmpnt/atomcmpnt</span>
+      </text>
+      <divider style="color: #fff;margin: 5px;"></divider>
+      <text style="margin-bottom: 10px;">
+        <span>image & image-animator</span>
+      </text>
+      <div class="row">
+        <div class="col-3" style="height: 180px;">
+          <image src="../../../common/img/1.png"></image>
+        </div>
+        <div class="col-3" style="height: 180px;">
+          <image-animator ref="animator" images="{{imgarr}}" duration="1s"></image-animator>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>progress</span>
+      </text>
+      <div class="row">
+        <div class="col-6" style="">
+          <progress percent="30" style="stroke-width:10px;background-color:#000;"></progress>
+        </div>
+        <div class="col-3">
+          <progress type="circular" percent="30"
+            style="stroke-width:30px;background-color:#000;height: 30px;"></progress>
+        </div>
+        <div class="col-3">
+          <progress type="ring" percent="30"
+            style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>
+          <progress type="scale-ring" percent="30"
+            style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>
+          <progress type="arc" percent="30"
+            style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>progress</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <rating rating="3.5"></rating>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+      <text style="margin-bottom: 10px;">
+        <span>marquee</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <marquee style="width: 100%;height: 30px;font-size: 12px;border:1px solid #000">
+            我一跳跑马的汉子，嗨，巴扎黑
+          </marquee>
+        </div>
+      </div>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>search</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <search></search>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>menu</span>
+      </text>
+      <div class="row">
+        <button @click="showMenu" style="text-color: #fff;">
+          打开menu
+        </button>
+        <menu id="menu">
+          <option value="1">导航1</option>
+          <option value="2">导航2</option>
+          <option value="3">导航3</option>
+        </menu>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>chart</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <stack class="chart-region">
+            <chart class="chart-data" type="line" ref="linechart" options="{{lineOps}}" datasets="{{lineData}}"></chart>
+          </stack>
+
+        </div>
+        <div class="col-6">
+          <button value="增改数据" onclick="addData" style="text-color: #fff;"></button>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>input & label</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <input type="button" value="type: button"></input>
+        </div>
+        <div class="col-2">
+          <input type="checkbox" checked="true"></input>
+          <text>
+              <span>多选1</span>
+          </text>
+        </div>
+        <div class="col-2">
+          <input type="checkbox" checked="false"></input>
+          <text>
+            <span>多选2</span>
+          </text>
+        </div>
+        <div class="col-2">
+          <input type="checkbox" checked="true"></input>
+          <text>
+            <span>多选3</span>
+          </text>
+        </div>
+        <div class="col-2">
+          <label class="label" target="singlechoose1">单选</label>
+          <input id="singlechoose1" type="radio" checked="false" name="singlechoose" value="singlechoose1"></input>
+        </div>
+        <div class="col-2">
+          <label class="label" target="singlechoose2">单选</label>
+          <input id="singlechoose2" type="radio" checked="true" name="singlechoose" value="singlechoose2"></input>
+        </div>
+        <div class="col-2">
+          <label class="label" target="singlechoose3">单选</label>
+          <input id="singlechoose3" type="radio" checked="false" name="singlechoose" value="singlechoose3"></input>
+        </div>
+        <div class="col-6">
+          <input type="text" placeholder="输入文字"></input>
+        </div>
+        <div class="col-6">
+          <input type="email" placeholder="输入邮箱"></input>
+        </div>
+        <div class="col-6">
+          <input type="date" placeholder="输入日期"></input>
+        </div>
+        <div class="col-6">
+          <input type="time" placeholder="输入时间"></input>
+        </div>
+        <div class="col-6">
+          <input type="number" placeholder="输入数字"></input>
+        </div>
+        <div class="col-6">
+          <input type="password" placeholder="输入密码"></input>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>button</span>
+      </text>
+      <div id="buttonlist" class="row">
+        <div class="col-2">
+          <button value="文本内容"></button>
+        </div>
+        <div class="col-4">
+          <button type="capsule" waiting="true" value="文本内容"></button>
+        </div>
+        <div class="col-2">
+          <button type="circle" value="文本内容"></button>
+        </div>
+        <div class="col-4">
+          <button type="text" value="文本内容"></button>
+        </div>
+        <div class="col-3">
+          <button type="arc" value="文本内容"></button>
+        </div>
+        <div class="col-3">
+          <button id="download-btn" type="download" onClick="setProgress" value="{{downloadText}}" style="width: 100%;"></button>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>slider</span>
+      </text>
+      <div class="row">
+        <div class="col-12">
+            <slider>
+
+            </slider>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>switch</span>
+      </text>
+      <div class="row">
+        <div class="col-3">
+          <switch checked="false"></switch>
+        </div>
+        <div class="col-3">
+          <switch checked="true"></switch>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>textarea</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+            <textarea placeholder="输入多行文本" style="height: 120px;"></textarea>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+    <list-item>
+      <text style="margin-bottom: 10px;">
+        <span>picker & picker view</span>
+      </text>
+      <div class="row">
+        <div class="col-6">
+          <picker type="text" range="{{textrange}}" selected="{{textrange[0]}}">文字选择器</picker>
+        </div>
+        <div class="col-6">
+          <picker type="date">日期选择器</picker>
+        </div>
+        <div class="col-6">
+          <picker type="time">时间选择器</picker>
+        </div>
+        <div class="col-6">
+          <picker type="datetime">日期时间选择器</picker>
+        </div>
+        <div class="col-6">
+          <picker type="multi-text" range="{{multitext}}">多列选择器</picker>
+        </div>
+      </div>
+      <divider style="color: #fff;margin: 5px;"></divider>
+    </list-item>
+  </list>
+
+
+
+
+
+
+
+  <!--    下面是复制的 无list Dom代码-->
+<!--  <div style="width: 100%;height: 100%;;display: flex;flex-direction: column;">-->
+<!--    <text style="font-size: 16px;margin-bottom: 20px;">-->
+<!--      <span>路径：pages/somehtml/atomcmpnt/atomcmpnt</span>-->
+<!--    </text>-->
+<!--    <divider style="color: #fff;margin: 5px;"></divider>-->
+<!--    <text style="margin-bottom: 10px;">-->
+<!--      <span>image & image-animator</span>-->
+<!--    </text>-->
+<!--    <div class="row">-->
+<!--      <div class="col-3" style="height: 180px;">-->
+<!--        <image src="../../../common/img/1.png"></image>-->
+<!--      </div>-->
+<!--      <div class="col-3" style="height: 180px;">-->
+<!--        <image-animator ref="animator" images="{{imgarr}}" duration="1s"></image-animator>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <divider style="color: #fff;margin: 5px;"></divider>-->
+
+<!--    <text style="margin-bottom: 10px;">-->
+<!--      <span>progress</span>-->
+<!--    </text>-->
+<!--    <div class="row">-->
+<!--      <div class="col-6" style="">-->
+<!--        <progress percent="30" style="stroke-width:10px;background-color:#000;"></progress>-->
+<!--      </div>-->
+<!--      <div class="col-3">-->
+<!--        <progress type="circular" percent="30" style="stroke-width:30px;background-color:#000;height: 30px;"></progress>-->
+<!--      </div>-->
+<!--      <div class="col-3">-->
+<!--        <progress type="ring" percent="30"-->
+<!--          style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>-->
+<!--        <progress type="scale-ring" percent="30"-->
+<!--          style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>-->
+<!--        <progress type="arc" percent="30"-->
+<!--          style="stroke-width:10px;background-color:#000;height: 30px;margin-left: 10px;"></progress>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <divider style="color: #fff;margin: 5px;"></divider>-->
+
+<!--    <text style="margin-bottom: 10px;">-->
+<!--      <span>progress</span>-->
+<!--    </text>-->
+<!--    <div class="row">-->
+<!--      <div class="col-6">-->
+<!--        <rating rating="3.5"></rating>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <divider style="color: #fff;margin: 5px;"></divider>-->
+<!--    <text style="margin-bottom: 10px;">-->
+<!--      <span>marquee</span>-->
+<!--    </text>-->
+<!--    <div class="row">-->
+<!--      <div class="col-6" style="height: 700px;border: 1px solid #000;">-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+
+</div>

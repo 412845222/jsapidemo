@@ -1,0 +1,107 @@
+<div class="container">
+    <text style="font-size: 18px;margin-bottom: 20px;">
+        <span>路径：pages/somehtml/listview/listview</span>
+    </text>
+    <list style="height: 200px;border: 1px solid #000;">
+        <list-item-group>
+            <list-item>
+                <text>
+                    <span>1.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>1.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>2.一个list-group</span>
+                </text>
+            </list-item>
+        </list-item-group>
+        <list-item-group>
+            <list-item>
+                <text>
+                    <span>2.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>2.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>2.一个list-group</span>
+                </text>
+            </list-item>
+        </list-item-group>
+        <list-item-group>
+            <list-item>
+                <text>
+                    <span>3.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>3.一个list-group</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>3.一个list-group</span>
+                </text>
+            </list-item>
+        </list-item-group>
+    </list>
+    
+    <divider style="color: #fff;margin: 5px;"></divider>
+    
+    <div style="height: 200px;border: 1px solid #000;">
+        <list>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item>
+            <list-item>
+                <text>
+                    <span>普通list 限高div</span>
+                </text>
+            </list-item><list-item>
+            <text>
+                <span>普通list 限高div</span>
+            </text>
+        </list-item>
+
+        </list>
+    </div>
+
+
+</div>

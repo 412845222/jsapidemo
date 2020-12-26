@@ -1,0 +1,51 @@
+@import '../../common/style.css';
+
+#home1 button {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(-225deg, #B7F8DB 0%, #50A7C2 60%);
+  text-color: #fff;
+  font-size: 12;
+}
+#home2 button {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(-225deg, #F8DB6D 0%, #C27F98 90%);
+  text-color: #fff;
+  font-size: 12;
+}
+#home3 button {
+  height: 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: linear-gradient(-225deg, #F8BBE2 0%, #A686C2 90%);
+  text-color: #fff;
+  font-size: 12;
+}
+.col-3 {
+  padding: 2px;
+}
+
+#dialog {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 400px;
+}
+#dialog list {
+  padding: 10px 20px;
+  background: linear-gradient(-225deg, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%);
+}
+#dialog list list-item {
+  margin:5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-image: url("/common/img/bg.png");
+}
+#dialog text {
+  color: #fff;
+  font-size: 24px;
+
+  text-align: center;
+}

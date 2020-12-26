@@ -1,0 +1,39 @@
+@import '../../../common/style.css';
+.container {
+  padding-bottom: 20px;
+}
+list {
+  width: 100%;
+  height: 100%;
+}
+list-item {
+  width: 100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.col-3 {
+  padding: 5px;
+}
+.col-6 {
+  padding: 5px;
+}
+.chart-region {
+  height: 200px;
+  width: 700px;
+}
+.chart-data {
+  width: 700px;
+  height: 300px;
+}
+.col-6 picker {
+  width: 100%;
+  height: 30px;
+  background-image: url("/common/img/bg.png");
+  border-radius: 5px;
+  text-color: #fff;
+}
+#buttonlist button {
+  background-color: #CFCFCF;
+  text-color: #fff;
+}

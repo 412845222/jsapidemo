@@ -1,0 +1,81 @@
+{
+  "app": {
+    "bundleName": "com.example.jsapidemo",
+    "vendor": "example",
+    "version": {
+      "code": 1,
+      "name": "1.0"
+    },
+    "apiVersion": {
+      "compatible": 3,
+      "target": 4,
+      "releaseType": "Beta1"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.example.jsapidemo",
+    "name": ".MyApplication",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry"
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "name": "com.example.jsapidemo.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "JsApiDemo",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.example.jsapidemo.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.example.jsapidemo.DataAbility",
+        "icon": "$media:icon",
+        "description": "$string:dataability_description",
+        "type": "data",
+        "uri": "dataability://com.example.jsapidemo.DataAbility"
+      }
+    ],
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/somehtml/divview/divview",
+          "pages/somehtml/listview/listview",
+          "pages/somehtml/stackview/stackview",
+          "pages/somehtml/swiperview/swiperview",
+          "pages/somehtml/tabsview/tabsview",
+          "pages/somehtml/popupview/popupview",
+          "pages/somehtml/refreshview/refreshview",
+          "pages/somehtml/dialogview/dialogview",
+          "pages/somehtml/atomcmpnt/atomcmpnt",
+          "pages/somehtml/videoview/videoview",
+          "pages/somehtml/sendPhoneMsg/sendPhoneMsg"
+        ],
+        "name": "default",
+        "window": {
+          "designWidth": 360,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
+}
